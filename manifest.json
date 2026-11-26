@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "网盘二维码右键直链",
+  "version": "1.1.0",
+  "description": "按需触发、零常驻开销：右键任意二维码图片即可纯本地识别并打开/复制百度网盘、夸克、迅雷等网页直链（自动补全提取码）。",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "扫描当前页 Canvas/SVG 二维码（右键图片可直接识别）",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
